@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Tables and Forms Assignment</title>
+</head>
+
+<body>
+    <h1>Pizza Ordering Form</h1>
+    <form>
+        <h2>Contact Information</h2>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required
+            placeholder="Thai"><br>
+        <label for="phone">Phone:</label>
+        <input type="tel" id="phone" name="phone" required
+            placeholder="123-456-7890"
+            pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"><br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required
+            placeholder="email@example.com">
+
+        <h2>Select Pizza Size</h2>
+        <label for="pizzaSize">Pizza Size: </label>
+        <select name="pizzaSize" id="pizzaSize" required>
+            <option value="" disabled selected>--Select Size--</option>
+            <option value="medium">Medium</option>
+            <option value="large">Large</option>
+            <option value="extraLarge">Extra Large</option>
+        </select>
+
+        <h2>Select Sauce</h2>
+        <input type="radio" name="sauceType" id="marinara" required><label> Marinara</label><br>
+        <input type="radio" name="sauceType" id="ranch"><label> Ranch</label><br>
+        <input type="radio" name="sauceType" id="noSauce"><label> No Sauce</label>
+
+        <h2>Select Toppings</h2>
+        <input type="checkbox" name="pepperoni"><label>Pepperoni</label>
+        <input type="checkbox" name="mushroom"><label>Mushroom</label><br>
+        <input type="checkbox" name="sausage"><label>Sausage</label>
+        <input type="checkbox" name="onions"><label>Onions</label><br>
+        <input type="checkbox" name="chicken"><label>Chicken</label>
+        <input type="checkbox" name="peppers"><label>Peppers</label><br>
+
+        <h2>Additional Instructions</h2>
+        <textarea name="extraInfo">Add instructions</textarea><br>
+
+        <input type="submit" value="Submit">
+    </form>
+
+    <br><br><table border="2">
+        <caption>List of My Favorite Video Games</caption>
+        <thead>
+            <tr>
+                <th>Developer</th>
+                <th>Title</th>
+                <th>Year</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td rowspan="2">Nintendo</td>
+                <td>The Legend of Zelda: Breath of the Wild</td>
+                <td>2017</td>
+            </tr>
+            <tr>
+                <td>The Legend of Zelda: Tears of the Kingdom</td>
+                <td>2023</td>
+            </tr>
+            <tr>
+                <td>Supergiant Games</td>
+                <td>Hades</td>
+                <td>2020</td>
+            </tr>
+            <tr>
+                <td>Square Enix</td>
+                <td>Final Fantasy XVI</td>
+                <td>2023</td>
+            </tr>
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <td colspan="3">Count: 4</td >
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
