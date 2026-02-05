@@ -1,0 +1,117 @@
+/* bottom right block */
+#thanks {
+    font-size: 32px;
+    position: fixed;
+    bottom: -35px;
+    right: 0px;
+    border: 2px solid black;
+    background-color: lightblue;
+    padding: 10px;
+}
+
+/* article navigation bar */
+#menuItems {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 15%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+}
+
+#jumpMenu {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    background-color: goldenrod;
+    text-align: center;
+    display: none;
+    line-height: 25px;
+}
+
+nav button {
+    background-color: blue;
+    color: white;
+    font-size: 20px;
+    padding: 15px;
+    width: 100%;
+}
+
+/* journal articles */
+h1 {
+    text-align: center;
+    font-size: 50px;
+}
+
+main {
+    margin-left: 15%;
+    margin-top: 7.5%;
+}
+
+#container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+article {
+    width: 300px;
+    padding: 30px;
+    scroll-margin-top: 50px;
+    color: gray;
+    transition: all 2s;
+}
+
+/* blog header */
+header{
+    position: fixed;
+    top: 0px;
+    left: 15%;
+    width: 85%;
+    z-index: 1;
+}
+
+header p {
+    margin: 0px;
+    background-color: red;
+    padding: 25px;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+/* pseudo-elements */
+article p:first-of-type::first-letter {
+    font-family:'Times New Roman', Times, serif;
+    font-size: 36px;
+}
+
+article p a::after{
+    content: url("arrow.png");
+}
+
+article:hover{
+    color: black;
+    transform: scale(1.15);
+}
+
+nav button:hover {
+    background-color: goldenrod;
+}
+
+#recentArticles:hover + #jumpMenu {
+    display: block;
+}
+
+#jumpMenu:hover {
+    display: block;
+}
+
+#jumpMenu li:hover {
+    background-color: blue;
+}
+
+#jumpMenu li:hover a {
+    color: white;
+}
