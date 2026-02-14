@@ -46,6 +46,9 @@ function addNewArticle() {
         newArticle.classList.add("update");
         markerType = "Update";
     }
+    else {
+        return;
+    }
 
     newArticle.innerHTML = `
         <span class="marker">${markerType}</span>
@@ -55,6 +58,7 @@ function addNewArticle() {
     `;
 
     articleList.append(newArticle);
+    filterArticles();
 }
 
 function filterArticles() {
