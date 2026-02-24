@@ -1,0 +1,36 @@
+body {
+    background-color: lightblue;
+}
+
+#pokedex {
+    width: fit-content;
+    height: fit-content;
+    background-color: white;
+    text-align: center;
+    margin: 10% 35%;
+    padding: 5%;
+    line-height: 2.5;
+    border-radius: 100px;
+    border: 5px solid goldenrod;
+}
+
+div.teamMember {
+    border: 2px solid black;
+    border-radius: 50px;
+    display: flex;
+}
+
+li {
+    font-size: 20px;
+}
+
+select {
+    width: 150px;
+}
+
+@media screen and (max-width: 1000px) {
+    #pokedex {         
+        margin: 0% auto;
+        font-size: 25px;    
+    }
+}

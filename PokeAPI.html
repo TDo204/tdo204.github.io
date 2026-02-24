@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Pokedex</title>
+    <link rel="stylesheet" href="PokeAPI.css">
+    <script src="PokeAPI.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+
+<body>
+    <div id="pokedex">
+        <label for="nameID">Name or ID</label><br>
+        <input type="text" id="nameID" name="nameID">
+        <button onclick="retrievePokemon()" id="findButton" type="button">Find</button>
+        <img id="pokemonSprite" src="pokeball.png" alt="Pokemon Sprite" width="300" height="300"><br>
+        <audio id="pokemonCry" controls></audio><br>
+        <select name="move1" id="move1"></select>
+        <select name="move2" id="move2"></select><br>
+        <select name="move3" id="move3"></select>
+        <select name="move4" id="move4"></select><br>
+        <button onclick="addTeam()" id="addButton" type="button">Add to Team</button>
+    </div>
+</body>
+</html>
